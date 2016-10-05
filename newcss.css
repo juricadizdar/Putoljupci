@@ -1,0 +1,88 @@
+.marquee {
+    margin-top: 0px;
+    width: 100%;
+    height: 30px;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px transparent solid;
+    background-color: transparent;
+}
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    text-indent: 0;
+	margin-top: 10px;
+    -moz-animation:  marquee 30s linear infinite;
+    -webkit-animation:  marquee 30s linear infinite;
+    animation: marquee 30s linear infinite;
+}
+.marquee span:hover {
+    animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+}
+
+/* Make it move */
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+@-webkit-keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+@-moz-keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+/* Make it pretty */
+.microsoft {
+    padding-left: 1.5em;
+    padding-top: 0px;
+    position: relative;
+    font: 14px 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+}
+
+/* ::before was :before before ::before was ::before - kthx */
+.microsoft:before, .microsoft::before {
+    z-index: 2;
+    content: '';
+    position: absolute;
+    top: -1em; left: -1em;
+    width: .5em; height: .5em;
+}
+
+.microsoft:after, .microsoft::after {
+    z-index: 1;
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 2em; height: 2em;
+}
+p a{
+    color: black;
+}
+p span a{
+    color: white;
+    text-decoration: none;
+    margin-left: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

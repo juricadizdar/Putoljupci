@@ -1,0 +1,50 @@
+p { margin-bottom: 18px; }
+a { color: #e7e691; text-decoration: none; outline-style: none; }
+a:hover { text-decoration: underline; }
+.demonstrations { 
+float: left; 
+clear: both; 
+width: 100%;
+ margin-bottom: 18px; }
+.demonstrations a {
+  float: left;
+  width: 168px;
+  height: 150px;
+  margin: 10px 10px 10px 10px;
+  cursor: pointer;
+}
+.demonstrations a img {
+  float: left;
+  width: 168px;
+  height: 150px;
+  border: 5px solid lightskyblue;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+
+@media (min-width: 280px) and (max-width: 480px) {
+	.demonstrations{
+		padding-top: -30px;
+		margin-left: -10px;
+	}
+	.demonstrations a {
+			  display: block;
+			  width: 100%;
+			  height: 250px;
+			  margin: 0 auto;
+			  padding-right: 5px;
+			  padding-top: 10px;
+			}
+			.demonstrations a img {
+			  display: block;
+			  width: 97%;
+			  height: 250px;
+	
+			}
+			#main_gal{
+				height: 6290px;
+				margin-top: -67px;
+			}
+			
+}
